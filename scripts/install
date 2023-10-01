@@ -73,15 +73,8 @@ path_no_trailing_slash=${path%/}
 _woodpecker_set_forge_config
 
 ynh_add_config --template="woodpecker-server.conf" --destination="$install_dir/woodpecker-server.conf"
-# chmod 400 "$install_dir/some_config_file"
-# chown $app:$app "$install_dir/some_config_file"
-
-### For more complex cases where you want to replace stuff using regexes,
-### you shoud rely on ynh_replace_string (which is basically a wrapper for sed)
-### When doing so, you also need to manually call ynh_store_file_checksum
-###
-### ynh_replace_string --match_string="match_string" --replace_string="replace_string" --target_file="$install_dir/some_config_file"
-### ynh_store_file_checksum --file="$install_dir/some_config_file"
+chmod 400 "$install_dir/woodpecker-server.conf"
+chown "$app:$app" "$install_dir/woodpecker-server.conf"
 
 #=================================================
 # GENERIC FINALIZATION
