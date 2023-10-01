@@ -45,12 +45,31 @@ ram.runtime = "200M"
     type = "group"
     default = "visitors"
 
-    # [install.language]
-    # ask.en = "Choose the application language"
-    # ask.fr = "Choisissez la langue de l'application"
-    # type = "select"
-    # choices = ["fr", "en"]
-    # default = "fr"
+    [install.forge_type]
+    ask.en = "Select the kind of forge you're connecting Woodpecker to"
+    ask.fr = "Sélectionnez le type de forge à laquelle vous connectez Woodpecker"
+    type = "select"
+    choices.github = "Github"
+    choices.gitlab = "Gitlab"
+    choices.gitea = "Gitea / Forgejo"
+    choices.bitbucket = "Bitbucket"
+
+    [install.forge_url]
+    ask.en = "Provide the forge URL"
+    ask.fr = "Entrez l'URL de la forge"
+    type = "string"
+    help.en = "Useless for Bitbucket and Github.com."
+    help.fr = "Inutile pour Bitbucket et Github.com."
+
+    [install.forge_client]
+    ask.en = "Provide the forge OAuth Client ID"
+    ask.fr = "Entrez l'ID de client OAuth de la forge"
+    type = "string"
+
+    [install.forge_secret]
+    ask.en = "Provide the forge OAuth secret"
+    ask.fr = "Entrez le secret OAuth de la forge"
+    type = "string"
 
     # [install.admin]
     # type = "user"
