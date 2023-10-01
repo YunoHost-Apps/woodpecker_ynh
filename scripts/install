@@ -69,6 +69,8 @@ ynh_use_logrotate
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
+path_no_trailing_slash=${path%/}
+
 ynh_add_config --template="woodpecker-server.conf" --destination="$install_dir/woodpecker-server.conf"
 # chmod 400 "$install_dir/some_config_file"
 # chown $app:$app "$install_dir/some_config_file"
