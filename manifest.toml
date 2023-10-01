@@ -53,11 +53,13 @@ ram.runtime = "200M"
     choices.gitlab = "Gitlab"
     choices.gitea = "Gitea / Forgejo"
     choices.bitbucket = "Bitbucket"
+    default = "github"
 
     [install.forge_url]
     ask.en = "Provide the forge URL"
     ask.fr = "Entrez l'URL de la forge"
     type = "string"
+    default = "https://myforge.tld"
     help.en = "Useless for Bitbucket and Github.com."
     help.fr = "Inutile pour Bitbucket et Github.com."
 
@@ -65,11 +67,13 @@ ram.runtime = "200M"
     ask.en = "Provide the forge OAuth Client ID"
     ask.fr = "Entrez l'ID de client OAuth de la forge"
     type = "string"
+    default = ""
 
     [install.forge_secret]
     ask.en = "Provide the forge OAuth secret"
     ask.fr = "Entrez le secret OAuth de la forge"
     type = "string"
+    default = ""
 
     # [install.admin]
     # type = "user"
