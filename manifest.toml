@@ -99,8 +99,8 @@ ram.runtime = "200M"
     arm64.sha256 = "1f41e913b5a743d02d91c2a6c939377595347dee135a035729d8b30779036a9b"
 
     autoupdate.strategy = "latest_github_release"
-    autoupdate.asset.amd64 = ".*_linux_amd64.tar.gz"
-    autoupdate.asset.arm64 = ".*_linux_arm64.tar.gz"
+    autoupdate.asset.amd64 = "woodpecker-server_linux_amd64.tar.gz"
+    autoupdate.asset.arm64 = "woodpecker-server_linux_arm64.tar.gz"
 
     in_subdir = false
 
