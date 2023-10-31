@@ -31,6 +31,7 @@ Ceci est une fausse description des fonctionalités de l'app
 * Documentation officielle utilisateur : <https://woodpecker-ci.org/docs/intro>
 * Documentation officielle de l’admin : <https://woodpecker-ci.org/docs/administration>
 * Dépôt de code officiel de l’app : <https://github.com/woodpecker-ci/woodpecker>
+* YunoHost Store: <https://apps.yunohost.org/app/woodpecker>
 * Signaler un bug : <https://github.com/YunoHost-Apps/woodpecker_ynh/issues>
 
 ## Informations pour les développeurs
