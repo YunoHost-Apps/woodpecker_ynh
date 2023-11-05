@@ -7,7 +7,7 @@ name = "Woodpecker"
 description.en = "CI engine with great extensibility integrated with Github, Gitlab, Gitea, etc."
 description.fr = "Un outil d'intégration continue extensible intégrable avec Github, Gitlab, Gitea etc."
 
-version = "1.0.2~ynh1"
+version = "1.0.4~ynh1"
 
 maintainers = ["Salamandar"]
 
@@ -92,11 +92,11 @@ ram.runtime = "200M"
     # This will pre-fetch the asset which can then be deployed during the install/upgrade scripts with :
     #    ynh_setup_source --dest_dir="$install_dir"
     # You can also define other assets than "main" and add --source_id="foobar" in the previous command
-    amd64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v1.0.2/woodpecker-server_linux_amd64.tar.gz"
-    amd64.sha256 = "e7c164db35cc4663cecbe8a1c4db96c8fbe0bd3fb3dae98cf0dd0dd23cfb59f7"
+    amd64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v1.0.4/woodpecker-server_linux_amd64.tar.gz"
+    amd64.sha256 = "7908fda46406fe1e6653ff596bc8c82241a03806246ad690a52e93c7454ea5ff"
 
-    arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v1.0.2/woodpecker-server_linux_arm64.tar.gz"
-    arm64.sha256 = "1f41e913b5a743d02d91c2a6c939377595347dee135a035729d8b30779036a9b"
+    arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v1.0.4/woodpecker-server_linux_arm64.tar.gz"
+    arm64.sha256 = "684ead27a4056919208d27156526f91f4d08fe4975ee22a987f3562edaa56002"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "woodpecker-server_linux_amd64.tar.gz"
