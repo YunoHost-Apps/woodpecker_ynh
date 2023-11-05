@@ -19,7 +19,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 Ceci est une fausse description des fonctionalités de l'app
 
 
-**Version incluse :** 1.0.2~ynh1
+**Version incluse :** 1.0.4~ynh1
 
 ## Captures d’écran
 
