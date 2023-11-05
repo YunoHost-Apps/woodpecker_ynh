@@ -56,6 +56,12 @@ yunohost service add "$app" --description="Woodpecker CI server" --log="/var/log
 ###		- As well as the section "RESTORE THE LOGROTATE CONFIGURATION" in the restore script
 ###		- And the section "SETUP LOGROTATE" in the upgrade script
 
+# Create log file before logrotate
+mkdir -p "/var/log/$app"
+touch "/var/log/$app/$app.log"
+chown -R "$app:$app" "/var/log/$app"
+chmod -R u=rwX,g=rX,o= "/var/log/$app"
+
 # Use logrotate to manage application logfile(s)
 ynh_use_logrotate
 
