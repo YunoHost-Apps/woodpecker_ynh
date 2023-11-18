@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "woodpecker"
 name = "Woodpecker"
-description.en = "CI engine with great extensibility integrated with Github, Gitlab, Gitea, etc."
-description.fr = "Un outil d'intégration continue extensible intégrable avec Github, Gitlab, Gitea etc."
+description.en = "CI engine with great extensibility integrated with GitHub, GitLab, Gitea..."
+description.fr = "Outil d'intégration continue extensible intégrable avec GitHub, GitLab, Gitea..."
 
 version = "1.0.5~ynh1"
 
@@ -22,7 +22,7 @@ cpe = "cpe:2.3:a:woodpecker-ci:woodpecker"
 fund = "https://opencollective.com/woodpecker-ci"
 
 [integration]
-yunohost = ">= 11.1.21"
+yunohost = ">= 11.2"
 architectures = ["amd64", "arm64"]
 multi_instance = true
 
@@ -75,23 +75,10 @@ ram.runtime = "200M"
     type = "string"
     default = ""
 
-    # [install.admin]
-    # type = "user"
-
-    # [install.password]
-    # # this is a generic question - ask strings are automatically handled by YunoHost's core
-    # # Note that user-provided passwords questions are not automatically saved as setting
-    # help.en = "Use the help field to add an information for the admin about this question."
-    # help.fr = "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
-    # type = "password"
-
 [resources]
     [resources.sources]
 
     [resources.sources.main]
-    # This will pre-fetch the asset which can then be deployed during the install/upgrade scripts with :
-    #    ynh_setup_source --dest_dir="$install_dir"
-    # You can also define other assets than "main" and add --source_id="foobar" in the previous command
     amd64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v1.0.5/woodpecker-server_linux_amd64.tar.gz"
     amd64.sha256 = "99ccffae1795b561d72850400383771ccf105a8fee8c74e524654d26262420ef"
 

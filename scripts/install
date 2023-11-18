@@ -32,30 +32,6 @@ ynh_add_systemd_config
 
 yunohost service add "$app" --description="Woodpecker CI server" --log="/var/log/$app/$app.log"
 
-### Additional options starting with 3.8:
-###
-### --needs_exposed_ports "$port" a list of ports that needs to be publicly exposed
-###                               which will then be checked by YunoHost's diagnosis system
-###                               (N.B. DO NOT USE THIS if the port is only internal!!!)
-###
-### --test_status "some command"  a custom command to check the status of the service
-###                               (only relevant if 'systemctl status' doesn't do a good job)
-###
-### --test_conf "some command"    some command similar to "nginx -t" that validates the conf of the service
-###
-### Re-calling 'yunohost service add' during the upgrade script is the right way
-### to proceed if you later realize that you need to enable some flags that
-### weren't enabled on old installs (be careful it'll override the existing
-### service though so you should re-provide all relevant flags when doing so)
-
-### `ynh_use_logrotate` is used to configure a logrotate configuration for the logs of this app.
-### Use this helper only if there is effectively a log file for this app.
-### If you're not using this helper:
-###		- Remove the section "BACKUP LOGROTATE" in the backup script
-###		- Remove also the section "REMOVE LOGROTATE CONFIGURATION" in the remove script
-###		- As well as the section "RESTORE THE LOGROTATE CONFIGURATION" in the restore script
-###		- And the section "SETUP LOGROTATE" in the upgrade script
-
 # Create log file before logrotate
 mkdir -p "/var/log/$app"
 touch "/var/log/$app/$app.log"
@@ -88,14 +64,6 @@ chown "$app:$app" "$install_dir/woodpecker-server.conf"
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=1
-
-### `ynh_systemd_action` is used to start a systemd service for an app.
-### Only needed if you have configure a systemd service
-### If you're not using these lines:
-###		- Remove the section "STOP SYSTEMD SERVICE" and "START SYSTEMD SERVICE" in the backup script
-###		- As well as the section "START SYSTEMD SERVICE" in the restore script
-###		- As well as the section"STOP SYSTEMD SERVICE" and "START SYSTEMD SERVICE" in the upgrade script
-###		- And the section "STOP SYSTEMD SERVICE" and "START SYSTEMD SERVICE" in the change_url script
 
 # Start a systemd service
 ynh_systemd_action --service_name="$app" --action="start" --log_path="/var/log/$app/$app.log"
