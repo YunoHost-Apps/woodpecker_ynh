@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+Woodpecker est un moteur CI simple avec une grande extensibilité.

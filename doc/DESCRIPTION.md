@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+Woodpecker is a simple CI engine with great extensibility.
