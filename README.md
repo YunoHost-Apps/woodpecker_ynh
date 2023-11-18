@@ -16,7 +16,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-This is a dummy description of this app features
+Woodpecker is a simple CI engine with great extensibility.
 
 
 **Shipped version:** 1.0.5~ynh1
