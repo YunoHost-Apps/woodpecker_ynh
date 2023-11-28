@@ -19,7 +19,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 Woodpecker est un moteur CI simple avec une grande extensibilité.
 
 
-**Version incluse :** 1.0.5~ynh2
+**Version incluse :** 2.0.0~ynh1
 
 ## Captures d’écran
 
