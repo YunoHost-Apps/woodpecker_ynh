@@ -19,7 +19,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 Woodpecker is a simple CI engine with great extensibility.
 
 
-**Shipped version:** 1.0.5~ynh2
+**Shipped version:** 2.1.1~ynh1
 
 ## Screenshots
 
