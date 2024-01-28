@@ -9,7 +9,7 @@ description.fr = "Outil d'intégration continue extensible intégrable avec GitH
 
 version = "1.0.5~ynh2"
 
-maintainers = ["Salamandar"]
+maintainers = [ "Salamandar" ]
 
 [upstream]
 license = "Apache-2.0"
@@ -23,7 +23,7 @@ fund = "https://opencollective.com/woodpecker-ci"
 
 [integration]
 yunohost = ">= 11.2"
-architectures = ["amd64", "arm64"]
+architectures = [ "amd64", "arm64" ]
 multi_instance = true
 
 ldap = false
@@ -78,34 +78,35 @@ ram.runtime = "200M"
 [resources]
     [resources.sources]
 
-    [resources.sources.main]
-    amd64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v1.0.5/woodpecker-server_linux_amd64.tar.gz"
-    amd64.sha256 = "99ccffae1795b561d72850400383771ccf105a8fee8c74e524654d26262420ef"
+        [resources.sources.main]
+        amd64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v1.0.5/woodpecker-server_linux_amd64.tar.gz"
+        amd64.sha256 = "99ccffae1795b561d72850400383771ccf105a8fee8c74e524654d26262420ef"
 
-    arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v1.0.5/woodpecker-server_linux_arm64.tar.gz"
-    arm64.sha256 = "a2b20b569daac3f9c4ebc5fb17026a2679f30d3ee7004bd6f09d63d1f102361c"
+        arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v1.0.5/woodpecker-server_linux_arm64.tar.gz"
+        arm64.sha256 = "a2b20b569daac3f9c4ebc5fb17026a2679f30d3ee7004bd6f09d63d1f102361c"
 
-    autoupdate.strategy = "latest_github_release"
-    autoupdate.asset.amd64 = "woodpecker-server_linux_amd64.tar.gz"
-    autoupdate.asset.arm64 = "woodpecker-server_linux_arm64.tar.gz"
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset.amd64 = "woodpecker-server_linux_amd64.tar.gz"
+        autoupdate.asset.arm64 = "woodpecker-server_linux_arm64.tar.gz"
 
-    in_subdir = false
+        in_subdir = false
 
-    [resources.system_user]
+[resources.system_user]
 
-    [resources.install_dir]
+[resources.install_dir]
 
-    [resources.data_dir]
+[resources.data_dir]
 
-    [resources.permissions]
-    main.url = "/"
+[resources.permissions]
+main.url = "/"
 
-    [resources.ports]
+[resources.ports]
 
-    [resources.apt]
-    packages = [
-        "postgresql"
-    ]
+main.default = 8000
+grpc.default = 9000
 
-    [resources.database]
-    type = "postgresql"
+[resources.apt]
+packages = [ "postgresql" ]
+
+[resources.database]
+type = "postgresql"
