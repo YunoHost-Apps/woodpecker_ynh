@@ -9,7 +9,7 @@ description.fr = "Outil d'intégration continue extensible intégrable avec GitH
 
 version = "2.2.2~ynh1"
 
-maintainers = ["Salamandar"]
+maintainers = [ "Salamandar" ]
 
 [upstream]
 license = "Apache-2.0"
@@ -23,7 +23,7 @@ fund = "https://opencollective.com/woodpecker-ci"
 
 [integration]
 yunohost = ">= 11.2"
-architectures = ["amd64", "arm64"]
+architectures = [ "amd64", "arm64" ]
 multi_instance = true
 
 ldap = false
@@ -85,27 +85,28 @@ ram.runtime = "200M"
     arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v2.2.2/woodpecker-server_linux_arm64.tar.gz"
     arm64.sha256 = "ba9e9ca23389d3b0195a874819586e024ab57435018bc977f38816cf5e35f9d9"
 
-    autoupdate.strategy = "latest_github_release"
-    autoupdate.asset.amd64 = "woodpecker-server_linux_amd64.tar.gz"
-    autoupdate.asset.arm64 = "woodpecker-server_linux_arm64.tar.gz"
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset.amd64 = "woodpecker-server_linux_amd64.tar.gz"
+        autoupdate.asset.arm64 = "woodpecker-server_linux_arm64.tar.gz"
 
-    in_subdir = false
+        in_subdir = false
 
-    [resources.system_user]
+[resources.system_user]
 
-    [resources.install_dir]
+[resources.install_dir]
 
-    [resources.data_dir]
+[resources.data_dir]
 
-    [resources.permissions]
-    main.url = "/"
+[resources.permissions]
+main.url = "/"
 
-    [resources.ports]
+[resources.ports]
 
-    [resources.apt]
-    packages = [
-        "postgresql"
-    ]
+main.default = 8000
+grpc.default = 9000
 
-    [resources.database]
-    type = "postgresql"
+[resources.apt]
+packages = [ "postgresql" ]
+
+[resources.database]
+type = "postgresql"
