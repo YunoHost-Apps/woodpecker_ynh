@@ -26,6 +26,18 @@ ynh_script_progression --message="Updating NGINX web server configuration..." --
 ynh_change_url_nginx_config
 
 #=================================================
+# MODIFY URL IN WOODPECKER CONF
+#=================================================
+ynh_script_progression --message="Updating configuration file..." --weight=1
+
+path_no_trailing_slash=${path%/}
+_woodpecker_set_forge_config
+
+ynh_add_config --template="woodpecker-server.conf" --destination="$install_dir/woodpecker-server.conf"
+chmod 400 "$install_dir/woodpecker-server.conf"
+chown "$app:$app" "$install_dir/woodpecker-server.conf"
+
+#=================================================
 # GENERIC FINALISATION
 #=================================================
 # START SYSTEMD SERVICE
