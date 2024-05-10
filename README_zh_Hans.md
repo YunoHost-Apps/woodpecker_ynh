@@ -3,7 +3,7 @@
 请勿手动编辑。
 -->
 
-# YunoHost 的 Woodpecker
+# YunoHost 上的 Woodpecker
 
 [![集成程度](https://dash.yunohost.org/integration/woodpecker.svg)](https://dash.yunohost.org/appci/app/woodpecker) ![工作状态](https://ci-apps.yunohost.org/ci/badges/woodpecker.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/woodpecker.maintain.svg)
 
@@ -19,7 +19,7 @@
 Woodpecker is a simple CI engine with great extensibility.
 
 
-**分发版本：** 2.3.0~ynh1
+**分发版本：** 2.4.1~ynh1
 
 ## 截图
 
