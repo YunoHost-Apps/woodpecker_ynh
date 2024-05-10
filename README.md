@@ -9,7 +9,7 @@ It shall NOT be edited by hand.
 
 [![Install Woodpecker with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=woodpecker)
 
-*[Read this README is other languages.](./ALL_README.md)*
+*[Read this README in other languages.](./ALL_README.md)*
 
 > *This package allows you to install Woodpecker quickly and simply on a YunoHost server.*  
 > *If you don't have YunoHost, please consult [the guide](https://yunohost.org/install) to learn how to install it.*
@@ -19,7 +19,7 @@ It shall NOT be edited by hand.
 Woodpecker is a simple CI engine with great extensibility.
 
 
-**Shipped version:** 2.2.2~ynh1
+**Shipped version:** 2.4.1~ynh1
 
 ## Screenshots
 
