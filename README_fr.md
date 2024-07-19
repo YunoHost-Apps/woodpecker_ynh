@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Woodpecker pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/woodpecker.svg)](https://dash.yunohost.org/appci/app/woodpecker) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/woodpecker.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/woodpecker.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/woodpecker.svg)](https://ci-apps.yunohost.org/ci/apps/woodpecker/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/woodpecker.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/woodpecker.maintain.svg)
 
 [![Installer Woodpecker avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=woodpecker)
 
@@ -19,7 +19,7 @@ Il NE doit PAS être modifié à la main.
 Woodpecker est un moteur CI simple avec une grande extensibilité.
 
 
-**Version incluse :** 2.6.0~ynh1
+**Version incluse :** 2.7.0~ynh1
 
 ## Captures d’écran
 
