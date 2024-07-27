@@ -30,7 +30,7 @@ Woodpecker is a simple CI engine with great extensibility.
 - Website aplikasi resmi: <https://woodpecker-ci.org>
 - Dokumentasi pengguna resmi: <https://woodpecker-ci.org/docs/intro>
 - Dokumentasi admin resmi: <https://woodpecker-ci.org/docs/administration>
-- Repositori kode aplikasi hulu: <https://github.com/woodpecker-ci/woodpecker>
+- Depot kode aplikasi hulu: <https://github.com/woodpecker-ci/woodpecker>
 - Gudang YunoHost: <https://apps.yunohost.org/app/woodpecker>
 - Laporkan bug: <https://github.com/YunoHost-Apps/woodpecker_ynh/issues>
 
