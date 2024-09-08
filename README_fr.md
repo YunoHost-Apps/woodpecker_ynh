@@ -19,7 +19,7 @@ Il NE doit PAS être modifié à la main.
 Woodpecker est un moteur CI simple avec une grande extensibilité.
 
 
-**Version incluse :** 2.7.0~ynh2
+**Version incluse :** 2.7.1~ynh1
 
 ## Captures d’écran
 
