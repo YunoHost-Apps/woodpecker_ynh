@@ -11,21 +11,12 @@ ynh_script_progression "Stopping $app's systemd service..."
 ynh_systemctl --service="$app" --action="stop"
 
 #=================================================
-# "REBUILD" THE APP (DEPLOY NEW SOURCES, RERUN NPM BUILD...)
-#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
+ynh_script_progression "Upgrading source files..."
 
-# FIXME: this is still supported but the recommendation is now to *always* re-setup the app sources wether or not the upstream sources changed
-if ynh_app_upstream_version_changed
-then
-	ynh_script_progression "Upgrading source files..."
+ynh_setup_source --dest_dir="$install_dir"
 
-	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir"
-fi
-
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R "$app:www-data" "$install_dir"
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
@@ -39,10 +30,6 @@ yunohost service add "$app" --description="Woodpecker CI server" --log="/var/log
 
 ynh_config_add_logrotate
 
-# ynh_config_add_fail2ban --logpath="/var/log/nginx/${domain}-error.log" --failregex="Regex to match into the log for a failed login"
-
-#=================================================
-# RECONFIGURE THE APP (UPDATE CONF, APPLY MIGRATIONS...)
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
@@ -52,6 +39,7 @@ path_no_trailing_slash=${path%/}
 _woodpecker_set_forge_config
 
 ynh_config_add --template="woodpecker-server.conf" --destination="$install_dir/woodpecker-server.conf"
+
 chmod 400 "$install_dir/woodpecker-server.conf"
 chown "$app:$app" "$install_dir/woodpecker-server.conf"
 
