@@ -19,7 +19,7 @@ It shall NOT be edited by hand.
 Woodpecker is a simple CI engine with great extensibility.
 
 
-**Shipped version:** 2.7.1~ynh2
+**Shipped version:** 2.7.3~ynh1
 
 ## Screenshots
 

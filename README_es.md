@@ -19,7 +19,7 @@ No se debe editar a mano.
 Woodpecker is a simple CI engine with great extensibility.
 
 
-**Versión actual:** 2.7.1~ynh2
+**Versión actual:** 2.7.3~ynh1
 
 ## Capturas
 
@@ -36,7 +36,7 @@ Woodpecker is a simple CI engine with great extensibility.
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/woodpecker_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/woodpecker_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
