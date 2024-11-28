@@ -5,7 +5,9 @@ It shall NOT be edited by hand.
 
 # Woodpecker for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/woodpecker.svg)](https://ci-apps.yunohost.org/ci/apps/woodpecker/) ![Working status](https://ci-apps.yunohost.org/ci/badges/woodpecker.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/woodpecker.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/woodpecker)](https://ci-apps.yunohost.org/ci/apps/woodpecker/)
+![Working status](https://apps.yunohost.org/badge/state/woodpecker)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/woodpecker)
 
 [![Install Woodpecker with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=woodpecker)
 
@@ -19,7 +21,7 @@ It shall NOT be edited by hand.
 Woodpecker is a simple CI engine with great extensibility.
 
 
-**Shipped version:** 2.7.1~ynh2
+**Shipped version:** 2.8.0~ynh1
 
 ## Screenshots
 

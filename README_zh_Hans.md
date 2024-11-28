@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Woodpecker
 
-[![集成程度](https://dash.yunohost.org/integration/woodpecker.svg)](https://ci-apps.yunohost.org/ci/apps/woodpecker/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/woodpecker.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/woodpecker.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/woodpecker)](https://ci-apps.yunohost.org/ci/apps/woodpecker/)
+![工作状态](https://apps.yunohost.org/badge/state/woodpecker)
+![维护状态](https://apps.yunohost.org/badge/maintained/woodpecker)
 
 [![使用 YunoHost 安装 Woodpecker](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=woodpecker)
 
@@ -19,7 +21,7 @@
 Woodpecker is a simple CI engine with great extensibility.
 
 
-**分发版本：** 2.7.1~ynh2
+**分发版本：** 2.8.0~ynh1
 
 ## 截图
 
