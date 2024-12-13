@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Woodpecker untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/woodpecker.svg)](https://ci-apps.yunohost.org/ci/apps/woodpecker/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/woodpecker.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/woodpecker.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/woodpecker)](https://ci-apps.yunohost.org/ci/apps/woodpecker/)
+![Status kerja](https://apps.yunohost.org/badge/state/woodpecker)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/woodpecker)
 
 [![Pasang Woodpecker dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=woodpecker)
 
@@ -19,7 +21,7 @@ Ini TIDAK boleh diedit dengan tangan.
 Woodpecker is a simple CI engine with great extensibility.
 
 
-**Versi terkirim:** 2.7.1~ynh2
+**Versi terkirim:** 2.8.1~ynh1
 
 ## Tangkapan Layar
 
