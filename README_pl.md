@@ -21,7 +21,7 @@ Nie powinno być ono edytowane ręcznie.
 Woodpecker is a simple CI engine with great extensibility.
 
 
-**Dostarczona wersja:** 2.8.2~ynh1
+**Dostarczona wersja:** 2.8.3~ynh1
 
 ## Zrzuty ekranu
 
