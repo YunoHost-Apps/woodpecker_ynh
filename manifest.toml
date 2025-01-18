@@ -7,7 +7,7 @@ name = "Woodpecker"
 description.en = "CI engine with great extensibility integrated with GitHub, GitLab, Gitea..."
 description.fr = "Outil d'intégration continue extensible intégrable avec GitHub, GitLab, Gitea..."
 
-version = "2.8.2~ynh1"
+version = "3.0.0~ynh1"
 
 maintainers = [ "Salamandar" ]
 
@@ -80,11 +80,11 @@ ram.runtime = "200M"
     [resources.sources]
 
     [resources.sources.main]
-    amd64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v2.8.2/woodpecker-server_linux_amd64.tar.gz"
-    amd64.sha256 = "f78cb10bc41aa8b1fc5df8c719bacc873135a3dd260e5f4a1d7c41ab840bbfb5"
+    amd64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.0.0/woodpecker-server_linux_amd64.tar.gz"
+    amd64.sha256 = "f8ce5e2f7bf800cd7adce9e130cd80353ae790fffe8c8f187891e61246dfe76d"
 
-    arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v2.8.2/woodpecker-server_linux_arm64.tar.gz"
-    arm64.sha256 = "38526b7fe2f0201ba9aa0d99479078ed579d890b6f569b7e9d7e24f160af3853"
+    arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.0.0/woodpecker-server_linux_arm64.tar.gz"
+    arm64.sha256 = "249cd8bfd6a1feda733c3e1c05d0683d291de678825a80986cf6cdededac3140"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "woodpecker-server_linux_amd64.tar.gz"
