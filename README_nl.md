@@ -21,7 +21,7 @@ Hij mag NIET handmatig aangepast worden.
 Woodpecker is a simple CI engine with great extensibility.
 
 
-**Geleverde versie:** 2.8.2~ynh1
+**Geleverde versie:** 3.0.1~ynh1
 
 ## Schermafdrukken
 
