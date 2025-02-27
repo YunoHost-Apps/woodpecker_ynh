@@ -92,22 +92,22 @@ ram.runtime = "200M"
 
     in_subdir = false
 
-[resources.system_user]
+    [resources.system_user]
+    
+    [resources.install_dir]
+    
+    [resources.data_dir]
 
-[resources.install_dir]
+    [resources.permissions]
+    main.url = "/"
 
-[resources.data_dir]
+    [resources.ports]
+    
+    main.default = 8000
+    grpc.default = 9000
+    
+    [resources.apt]
+    packages = [ "postgresql" ]
 
-[resources.permissions]
-main.url = "/"
-
-[resources.ports]
-
-main.default = 8000
-grpc.default = 9000
-
-[resources.apt]
-packages = [ "postgresql" ]
-
-[resources.database]
-type = "postgresql"
+    [resources.database]
+    type = "postgresql"
