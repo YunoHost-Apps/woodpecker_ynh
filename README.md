@@ -4,14 +4,14 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/master/logos/woodpecker.png" width="32px" alt="Logo of Woodpecker">
+  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/woodpecker.png" width="32px" alt="Logo of Woodpecker">
   Woodpecker, packaged for YunoHost
 </h1>
 
 CI engine with great extensibility integrated with GitHub, GitLab, Gitea...
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://woodpecker-ci.org)
-![Version: 3.5.0~ynh1](https://img.shields.io/badge/Version-3.5.0~ynh1-rgba(0,150,0,1)?style=for-the-badge)
+[![Version: 3.6.0~ynh1](https://img.shields.io/badge/Version-3.6.0~ynh1-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/woodpecker/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/woodpecker"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
@@ -19,6 +19,8 @@ CI engine with great extensibility integrated with GitHub, GitLab, Gitea...
 </div>
 
 ## 📦 Developer info
+
+[![Automatic tests level](https://apps.yunohost.org/badge/cilevel/woodpecker)](https://ci-apps.yunohost.org/ci/apps/woodpecker/)
 
 🛠️ Upstream Woodpecker repository: <https://github.com/woodpecker-ci/woodpecker>
 
