@@ -81,7 +81,7 @@ ram.runtime = "200M"
 
     [resources.sources.main]
     amd64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.10.0/woodpecker-server_linux_amd64.tar.gz"
-    amd64.sha256 = "d1637f6ab4f98ef9a3a9be51011921361feed1c13b88a3e05b175b8adcf8daa1"
+    amd64.sha256 = "f58de08e710babe5632ac08dec3885652c50e6b6f46ffdb38687b17c60716954"
 
     arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.10.0/woodpecker-server_linux_arm64.tar.gz"
     arm64.sha256 = "88a9e61424b327badbbfe652b3dfba81243cde756e8e6eccef99fe4e939e9182"
