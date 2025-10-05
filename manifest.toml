@@ -84,7 +84,7 @@ ram.runtime = "200M"
     amd64.sha256 = "f58de08e710babe5632ac08dec3885652c50e6b6f46ffdb38687b17c60716954"
 
     arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.10.0/woodpecker-server_linux_arm64.tar.gz"
-    arm64.sha256 = "88a9e61424b327badbbfe652b3dfba81243cde756e8e6eccef99fe4e939e9182"
+    arm64.sha256 = "ef7879552ba2b17e181345674380710dbe596951e1425859c3d2699d83515f13"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "woodpecker-server_linux_amd64.tar.gz"
