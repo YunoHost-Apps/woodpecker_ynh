@@ -29,12 +29,17 @@ ynh_config_add --template="woodpecker-server.conf" --destination="$install_dir/w
 chmod 400 "$install_dir/woodpecker-server.conf"
 chown "$app:$app" "$install_dir/woodpecker-server.conf"
 
+ynh_config_add --template="woodpecker-agent.env" --destination="$install_dir/woodpecker-agent.env"
+chmod 400 "$install_dir/woodpecker-agent.env"
+chown "$app:$app" "$install_dir/woodpecker-agent.env"
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service=$app --action="start"
+ynh_systemctl --service="$app" --action="start"
+ynh_systemctl --service="$app-agent" --action="start"
 
 #=================================================
 # END OF SCRIPT

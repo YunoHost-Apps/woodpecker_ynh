@@ -1,7 +1,10 @@
 #!/bin/bash
 
 source _common.sh
-source /usr/share/yunohost/helpers
+source /usr/share/yunohost/
+
+key=$(ynh_string_random --length=32)
+ynh_app_setting_set --key="key" --value="$key"
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -9,6 +12,7 @@ source /usr/share/yunohost/helpers
 ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
+ynh_setup_source --dest_dir="$install_dir" --source_id="agent"
 
 ls -lah "$install_dir"
 
@@ -22,9 +26,11 @@ ynh_config_add_nginx
 ynh_config_add_systemd
 
 yunohost service add "$app" --description="Woodpecker CI server" --log="/var/log/$app/$app.log"
+yunohost service add "$app-agent" --description="Woodpecker CI agent" --log="/var/log/$app/$app-agent.log"
 
 mkdir -p "/var/log/$app"
 touch "/var/log/$app/$app.log"
+touch "/var/log/$app/$app-agent.log"
 
 ynh_config_add_logrotate
 
@@ -37,9 +43,12 @@ path_no_trailing_slash=${path%/}
 _woodpecker_set_forge_config
 
 ynh_config_add --template="woodpecker-server.conf" --destination="$install_dir/woodpecker-server.conf"
+ynh_config_add --template="woodpecker-agent.env" --destination="$install_dir/woodpecker-agent.env"
 
 chmod 400 "$install_dir/woodpecker-server.conf"
 chown "$app:$app" "$install_dir/woodpecker-server.conf"
+chmod 400 "$install_dir/woodpecker-agent.env"
+chown "$app:$app" "$install_dir/woodpecker-agent.env"
 
 #=================================================
 # START SYSTEMD SERVICE
@@ -47,6 +56,7 @@ chown "$app:$app" "$install_dir/woodpecker-server.conf"
 ynh_script_progression "Starting $app's systemd service..."
 
 ynh_systemctl --service="$app" --action="start"
+ynh_systemctl --service="$app-agent" --action="start"
 
 #=================================================
 # END OF SCRIPT
