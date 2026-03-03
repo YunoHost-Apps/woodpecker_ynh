@@ -5,6 +5,7 @@ source /usr/share/yunohost/helpers
 
 key=$(ynh_string_random --length=32)
 ynh_app_setting_set_default --key="key" --value="$key"
+ynh_app_setting_set_default --key="admin" --value="admin"
 
 #=================================================
 # STOP SYSTEMD SERVICE
