@@ -26,6 +26,7 @@ ynh_script_progression "Upgrading system configurations related to $app..."
 ynh_config_add_nginx
 
 ynh_config_add_systemd
+ynh_config_add_systemd --service="$app-agent" --template="woodpecker-agent.service"
 
 yunohost service add "$app" --description="Woodpecker CI server" --log="/var/log/$app/$app.log"
 yunohost service add "$app-agent" --description="Woodpecker CI agent" --log="/var/log/$app/$app-agent.log"
