@@ -46,7 +46,7 @@ ynh_restore "/etc/logrotate.d/$app"
 ynh_script_progression "Reloading NGINX web server and $app's service..."
 
 ynh_systemctl --service="$app" --action="start" --wait_until="starting Woodpecker server with version"
-ynh_systemctl --service="$app-agent" --action="start" --wait_until="starting Woodpecker agent with version"
+ynh_systemctl --service="$app-agent" --action="start" #--wait_until="starting Woodpecker agent with version"
 
 ynh_systemctl --service=nginx --action=reload
 
