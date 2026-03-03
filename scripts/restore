@@ -31,7 +31,7 @@ ynh_restore "/etc/systemd/system/$app-agent.service"
 systemctl enable "$app-agent.service" --quiet
 
 yunohost service add "$app" --description="Woodpecker CI server" --log="/var/log/$app/$app.log"
-yunohost service add "$app-agent" --description="Woodpecker CI server" --log="/var/log/$app/$app-agent.log"
+yunohost service add "$app-agent" --description="Woodpecker CI agent" --log="/var/log/$app/$app-agent.log"
 
 # Create log file before logrotate
 mkdir -p "/var/log/$app"
