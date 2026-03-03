@@ -75,6 +75,9 @@ ram.runtime = "200M"
     type = "string"
     default = ""
 
+    [install.admin]
+    type = "user"
+
 [resources]
     [resources.sources]
 

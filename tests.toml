@@ -12,6 +12,7 @@ test_format = 1.0
     args.forge_url = "https://github.com"
     args.forge_client = "dummy client"
     args.forge_secret = "dummy secret"
+    args.admin = "dummy admin"
 
     # -------------------------------
     # Default args to use for install
