@@ -117,7 +117,7 @@ ram.runtime = "200M"
     
     main.default = 8000
     grpc.default = 9000
-    healthcheck.default = 3000
+    healthcheck.default = 3002
     
     [resources.apt]
     packages = [ "git", "git-lfs", "postgresql" ]
