@@ -3,7 +3,8 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
-ynh_app_setting_set_default --key="key" --value="$(ynh_string_random --length=32)"
+key=$(ynh_string_random --length=32)
+ynh_app_setting_set_default --key="key" --value="$key"
 
 #=================================================
 # STOP SYSTEMD SERVICE
