@@ -120,7 +120,7 @@ ram.runtime = "200M"
     healthcheck.default = 3000
     
     [resources.apt]
-    packages = [ "postgresql" ]
+    packages = [ "git", "git-lfs", "postgresql" ]
 
     [resources.database]
     type = "postgresql"
