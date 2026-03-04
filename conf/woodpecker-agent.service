@@ -1,5 +1,5 @@
 [Unit]
-Description=Woodpecker CI server
+Description=Woodpecker CI agent
 After=network.target
 
 [Service]
@@ -7,32 +7,32 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/woodpecker-server
-EnvironmentFile=__INSTALL_DIR__/woodpecker-server.conf
-StandardOutput=append:/var/log/__APP__/__APP__.log
+ExecStart=__INSTALL_DIR__/agent/woodpecker-agent
+EnvironmentFile=__INSTALL_DIR__/agent/woodpecker-agent.env
+StandardOutput=append:/var/log/__APP__/__APP__-agent.log
 StandardError=inherit
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
 # .. but this should be a good baseline
 # Details for these options: https://www.freedesktop.org/software/systemd/man/systemd.exec.html
-NoNewPrivileges=yes
+NoNewPrivileges=no
 PrivateTmp=yes
-PrivateDevices=yes
+PrivateDevices=no
 RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
-RestrictNamespaces=yes
+RestrictNamespaces=no
 RestrictRealtime=yes
 DevicePolicy=closed
 ProtectClock=yes
 ProtectHostname=yes
 ProtectProc=invisible
-ProtectSystem=full
+ProtectSystem=no
 ProtectControlGroups=yes
 ProtectKernelModules=yes
 ProtectKernelTunables=yes
 LockPersonality=yes
 SystemCallArchitectures=native
-SystemCallFilter=~@clock @debug @module @mount @obsolete @reboot @setuid @swap @cpu-emulation @privileged
+SystemCallFilter=
 
 # Denying access to capabilities that should not be relevant for webapps
 # Doc: https://man7.org/linux/man-pages/man7/capabilities.7.html
