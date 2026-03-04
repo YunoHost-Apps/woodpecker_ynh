@@ -12,7 +12,7 @@ ynh_app_setting_set_default --key="key" --value="$(ynh_string_random --length=32
 key=$(ynh_app_setting_get --key="key")
 
 ynh_app_setting_set_default --key="admin" --value="$(ynh_user_list | head -n1)"
-admin=$(ynh_setting_get --key="admin")
+admin=$(ynh_app_setting_get --key="admin")
 
 #=================================================
 # STOP SYSTEMD SERVICE
