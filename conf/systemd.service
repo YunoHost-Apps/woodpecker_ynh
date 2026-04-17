@@ -1,5 +1,5 @@
 [Unit]
-Description=Woodpecker CI server
+Description=Woodpecker: CI server
 After=network.target
 
 [Service]

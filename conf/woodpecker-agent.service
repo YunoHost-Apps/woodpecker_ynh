@@ -1,5 +1,5 @@
 [Unit]
-Description=Woodpecker CI agent
+Description=Woodpecker: CI agent
 After=network.target
 
 [Service]
