@@ -17,6 +17,10 @@ ls -lah "$install_dir"
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
 
+# Set SSOwat basic auth header handling
+ynh_app_setting_set --key=protect_against_basic_auth_spoofing --value=false
+yunohost app ssowatconf
+
 ynh_config_add_nginx
 
 ynh_config_add_systemd
