@@ -7,7 +7,7 @@ name = "Woodpecker"
 description.en = "CI engine with great extensibility integrated with GitHub, GitLab, Gitea..."
 description.fr = "Outil d'intégration continue extensible intégrable avec GitHub, GitLab, Gitea..."
 
-version = "3.20.1~ynh1"
+version = "3.21.0~ynh1"
 
 maintainers = [ "Salamandar" ]
 
@@ -82,11 +82,11 @@ ram.runtime = "200M"
     [resources.sources]
 
     [resources.sources.main]
-    amd64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.20.1/woodpecker-server_linux_amd64.tar.gz"
-    amd64.sha256 = "82dd50755bb198943521fa30e788ddd20de8179126d5abf9cb5de43e506e45a2"
+    amd64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.21.0/woodpecker-server_linux_amd64.tar.gz"
+    amd64.sha256 = "ccb5575e4933b50c5a536ab87d781f5288f027c59bc7940cc7663c5fec27a530"
 
-    arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.20.1/woodpecker-server_linux_arm64.tar.gz"
-    arm64.sha256 = "e9cab800c637a0d690f0475a21a7961f4f91dc7cdd845babf7238c2ef71bfcdf"
+    arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.21.0/woodpecker-server_linux_arm64.tar.gz"
+    arm64.sha256 = "0d3add744adc472b69b6ba09324a2d8ecadb1dd124d755aabfe509c60ee086a4"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "woodpecker-server_linux_amd64.tar.gz"
@@ -95,11 +95,11 @@ ram.runtime = "200M"
     in_subdir = false
 
     [resources.sources.agent]
-    amd64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.20.1/woodpecker-agent_linux_amd64.tar.gz"
-    amd64.sha256 = "cb8cf9028cde5a8eaf8612e9aec59a3e8636c1b2ab8d339cfafb770ebba5e3d8"
+    amd64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.21.0/woodpecker-agent_linux_amd64.tar.gz"
+    amd64.sha256 = "eae3f45dde45926919017c45e873a82009d32f056df3ad4bbaf3c12946be39f7"
 
-    arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.20.1/woodpecker-agent_linux_arm64.tar.gz"
-    arm64.sha256 = "ac62b815257cb6b90f487366607bc918eb99221082a695fc39135496d4c49b28"
+    arm64.url = "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.21.0/woodpecker-agent_linux_arm64.tar.gz"
+    arm64.sha256 = "b772181c45607434d2fbb2b50cbdae99f3fd08e6aff47e218ed7f6ac3c0c1ad0"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "woodpecker-agent_linux_amd64.tar.gz"
